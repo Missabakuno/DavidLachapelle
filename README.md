@@ -12,4 +12,7 @@ http://extranet.artsaucarre.be/claroline/backends/download.php?url=L0RhdmlkX0xhX
            * création du readme
            * envoie du code qui avait déjà été présenté au 2éme étage du Carré
            
+17-11-07 : * création du dossier "lib"
+           * création du lib/readme
+           
 Pour le 17-11-21 : avoir tout fini pour présenter au BAM
