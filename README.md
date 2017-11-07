@@ -12,4 +12,4 @@ http://extranet.artsaucarre.be/claroline/backends/download.php?url=L0RhdmlkX0xhX
            * création du readme
            * envoie du code qui avait déjà été présenté au 2éme étage du Carré
            
-Pour le 17-10-21 : avoir tout fini pour présenter au BAM
+Pour le 17-11-21 : avoir tout fini pour présenter au BAM
