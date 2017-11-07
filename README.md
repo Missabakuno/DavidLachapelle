@@ -1,4 +1,4 @@
-# DavidLachapelle
+# David LaChapelle
 Travail kinect David LaChapelle
 
 Liens utiles: 
