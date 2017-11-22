@@ -15,4 +15,7 @@ http://extranet.artsaucarre.be/claroline/backends/download.php?url=L0RhdmlkX0xhX
 17-11-07 : * création du dossier "lib"
            * création du lib/readme
            
+17-11-20 : * création du dossier schéma
+           * ajout du schéma pdf
+           
 Pour le 17-11-21 : avoir tout fini pour présenter au BAM
