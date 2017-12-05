@@ -1,7 +1,7 @@
 import SimpleOpenNI.*; 
 
 SimpleOpenNI  context; 
-PImage img;
+PImage img, img1, img2, img3;
 
 //on choisis 2 distance
 //celle ou se termine le premier plan
@@ -26,6 +26,11 @@ void setup() {
 
   img=createImage(640, 480, RGB);
   img.loadPixels();
+  
+  img1 = loadImage ("premierplan.png");
+  img2 = loadImage ("secondplan.png");
+  img3 = loadImage ("dernierplan.png");
+
 }
 
 void draw() {
@@ -87,17 +92,22 @@ void draw() {
 
 
     // CONDITION - c'est ici que l'on décide de ce qui se passe aux distances choisie plus haut
-    if (projCoM.z < minZ) {//if the user is within a certain range
+    if (projCoM.z <= minZ) {//if the user is within a certain range
       fill(255, 0, 0);
       ellipse(projCoM.x, projCoM.y, 50, 50);
+      image (img1, 0,0, width, height);
     }
     if (projCoM.z > minZ && projCoM.z < maxZ) {//if the user is within a certain range
       fill(0, 255, 0);
       ellipse(projCoM.x, projCoM.y, 50, 50);
+            image (img2, 0,0, width, height);
+
     }
-    if (projCoM.z > maxZ) {//if the user is within a certain range
+    if (projCoM.z >= maxZ) {//if the user is within a certain range
       fill(0, 0, 255);
       ellipse(projCoM.x, projCoM.y, 50, 50);
+            image (img3, 0,0, width, height);
+
     }
 
 
