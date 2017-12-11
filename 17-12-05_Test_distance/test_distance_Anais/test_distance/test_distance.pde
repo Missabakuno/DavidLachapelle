@@ -1,7 +1,7 @@
 import SimpleOpenNI.*; 
 
 SimpleOpenNI  context; 
-PImage img, img1, img2, img3;
+PImage img, img1, img2, img3, img4;
 
 //on choisis 2 distance
 //celle ou se termine le premier plan
@@ -30,7 +30,7 @@ void setup() {
   img1 = loadImage ("premierplan.png");
   img2 = loadImage ("secondplan.png");
   img3 = loadImage ("dernierplan.png");
-
+  img4 = loadImage ("tout.jpg");
 }
 
 void draw() {
@@ -86,28 +86,33 @@ void draw() {
     PVector projCoM=new PVector();
 
     //convert realworld coordinates to projective (those that we can use to draw to our canvas)
-    context.convertRealWorldToProjective(realCoM, projCoM);
-    fill(255, 0, 0);
-    ellipse(projCoM.x, projCoM.y, 10, 10);
+    
 
 
     // CONDITION - c'est ici que l'on décide de ce qui se passe aux distances choisie plus haut
     if (projCoM.z <= minZ) {//if the user is within a certain range
       fill(255, 0, 0);
       ellipse(projCoM.x, projCoM.y, 50, 50);
+      image (img4, 0,0, width, height);
+          context.convertRealWorldToProjective(realCoM, projCoM);
+
       image (img1, 0,0, width, height);
     }
     if (projCoM.z > minZ && projCoM.z < maxZ) {//if the user is within a certain range
       fill(0, 255, 0);
       ellipse(projCoM.x, projCoM.y, 50, 50);
-            image (img2, 0,0, width, height);
+      image (img4, 0,0, width, height);
+          context.convertRealWorldToProjective(realCoM, projCoM);
 
+      image (img2, 0,0, width, height);
     }
     if (projCoM.z >= maxZ) {//if the user is within a certain range
       fill(0, 0, 255);
       ellipse(projCoM.x, projCoM.y, 50, 50);
-            image (img3, 0,0, width, height);
+      image (img4, 0,0, width, height);
+          context.convertRealWorldToProjective(realCoM, projCoM);
 
+      image (img3, 0,0, width, height);
     }
 
 
