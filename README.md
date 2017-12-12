@@ -19,3 +19,5 @@ http://extranet.artsaucarre.be/claroline/backends/download.php?url=L0RhdmlkX0xhX
            * ajout du schéma pdf
            
 Pour le 17-11-21 : avoir tout fini pour présenter au BAM
+
+17-12-12 : * développement detection distance
