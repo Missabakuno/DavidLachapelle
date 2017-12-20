@@ -21,3 +21,6 @@ http://extranet.artsaucarre.be/claroline/backends/download.php?url=L0RhdmlkX0xhX
 Pour le 17-11-21 : avoir tout fini pour présenter au BAM
 
 17-12-12 : * développement detection distance
+
+17-12-20 : * ajout code final
+           * page site anais : http://anaisboitte.student.artsaucarre.be/site_perso/chapelle.html
